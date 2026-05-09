@@ -49,16 +49,14 @@
 
 // console.log(wordList.length);
 
-
 //-----------------------------------------------------------------
-
 
 // Task-4:
 // Write a function to find the longest word in a given string.
 // sample-input: I am learning Programming to become a programmer
 // sample-output: Programming
 
-
+/*
 function findLongestWord(str) {
     const words = str.split(' ');
     let longestWord = "";
@@ -73,3 +71,14 @@ function findLongestWord(str) {
 
 const input = "I am learning Programming to become a programmer";
 console.log(findLongestWord(input));
+*/
+//---------------------------------------------------------------------
+
+// Task-5:
+// Generate a random number between 10 to 20.
+
+function getRandomNumber() {
+  return Math.floor(Math.random() * (20 - 10 + 1)) + 10;
+}
+
+console.log(getRandomNumber());
