@@ -1,7 +1,5 @@
 // Practice Problems
 
-
-
 // Task-1: Write a function to convert temperature from Celsius to Fahrenheit.
 
 // Solution of task-1:
@@ -15,23 +13,38 @@
 //   `${celsius} celsius is equal to ${celsiusToFahrenheit(10)} fahrenheit.`,
 // );
 
-
 // -------------------------------------------------------------------
-
 
 // Task-2: You are given an array of numbers. Count how many times the a number is repeated in the array.
 // sample-input: numbers = [5,6,11,12,98, 5]
 // find: 5 | output: 2
 
-const numbers = [5, 5, 6, 11, 12, 98, 5];
+// const numbers = [5, 5, 6, 11, 12, 98, 5];
 
-const userInput = parseInt(prompt("Type a valid positive number: "));
-let similarNums = [];
+// const userInput = parseInt(prompt("Type a valid positive number: "));
+// let similarNums = [];
 
-for (num of numbers) {
-  if (num === userInput) {
-    similarNums.push(userInput);
+// for (num of numbers) {
+//   if (num === userInput) {
+//     similarNums.push(userInput);
+//   }
+// }
+
+// console.log(`There is ${similarNums.length} total ${userInput}'s in the array.`);
+
+// -------------------------------------------------------------------
+
+// Task-3 Write a function to count the number of vowels in a string.
+
+const vowels = ["a", "e", "i", "o", "u"];
+
+const userInput = parseInt(prompt("What is your text? : "));
+wordList = [];
+
+for (word of user_input) {
+  if (word in vowels) {
+    wordList.push(word);
   }
 }
 
-console.log(`There is ${similarNums.length} total ${userInput}'s in the array.`);
+console.log(wordList.length);
