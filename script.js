@@ -70,7 +70,7 @@ function findLongestWord(str) {
 }
 
 const input = "I am learning Programming to become a programmer";
-console.log(findLongestWord(input));
+console.log(findLongestWord(input)); // Output: Programming
 */
 //---------------------------------------------------------------------
 
@@ -81,7 +81,7 @@ function getRandomNumber() {
   return Math.floor(Math.random() * (20 - 10 + 1)) + 10;
 }
 
-console.log(getRandomNumber());
+console.log(getRandomNumber());  // Could be 10, 15, 20, etc.
 */
 
 //---------------------------------------------------------------------
