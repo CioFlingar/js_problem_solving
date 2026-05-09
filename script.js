@@ -36,15 +36,40 @@
 
 // Task-3 Write a function to count the number of vowels in a string.
 
-const vowels = ["a", "e", "i", "o", "u"];
+// const vowels = ["a", "e", "i", "o", "u"];
 
-const userInput = parseInt(prompt("What is your text? : "));
-wordList = [];
+// const userInput = parseInt(prompt("What is your text? : "));
+// wordList = [];
 
-for (word of user_input) {
-  if (word in vowels) {
-    wordList.push(word);
-  }
+// for (word of user_input) {
+//   if (word in vowels) {
+//     wordList.push(word);
+//   }
+// }
+
+// console.log(wordList.length);
+
+
+//-----------------------------------------------------------------
+
+
+// Task-4:
+// Write a function to find the longest word in a given string.
+// sample-input: I am learning Programming to become a programmer
+// sample-output: Programming
+
+
+function findLongestWord(str) {
+    const words = str.split(' ');
+    let longestWord = "";
+
+    for (const word of words) {
+        if (word.length > longestWord.length) {
+            longestWord = word;
+        }
+    }
+    return longestWord;
 }
 
-console.log(wordList.length);
+const input = "I am learning Programming to become a programmer";
+console.log(findLongestWord(input));
