@@ -76,9 +76,33 @@ console.log(findLongestWord(input));
 
 // Task-5:
 // Generate a random number between 10 to 20.
-
+/*
 function getRandomNumber() {
   return Math.floor(Math.random() * (20 - 10 + 1)) + 10;
 }
 
 console.log(getRandomNumber());
+*/
+
+//---------------------------------------------------------------------
+
+
+// Task -6:
+// Find the lowest number in the array below.
+// const heights2 = [167, 190, 120, 165, 137];
+
+
+function findLowest(arr) {
+    let lowest = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < lowest) {
+            lowest = arr[i];
+        }
+    }
+    return lowest;
+}
+
+const heights2 = [167, 190, 120, 165, 137]; // [cite: 22]
+console.log(findLowest(heights2)); // Output: 120
+
+
